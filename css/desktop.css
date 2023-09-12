@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: aqua;
+    width: 100%; 
+}
+
+#game {
+    width: 400px;
+    height: 200px;
+    left: 50px;
+    top: 2px;
+    position: relative;
+    background-color: rgb(255, 140, 0);
+    border: 1px solid black;
+}
+
+#obstaculo {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    position: relative;
+    left: 170px;
+    top: 60px;
+    background-color: green;
+}
+
+#personagem {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    position: relative;
+    left: 0px;
+    top: 169px;
+    background-color: red;
+    transition: 500ms linear;
+}
+
+.animar {
+    animation: personagem 500ms infinite;
+}
+
+
+
+@keyframes personagem {
+    0%{left: 0px;}
+    50%{left: 10px;}
+    100%{left: 20px;}
+}
